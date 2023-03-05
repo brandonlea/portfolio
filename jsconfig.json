@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "baseUrl": "../../Downloads/tailwindui-spotlight",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  }
+}
