@@ -161,7 +161,7 @@ export default function Home({ articles }) {
         </title>
         <meta
           name="description"
-          content="I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."
+          content="I'm Brandon-Lea, a software developer based in United Kingdom. I'm looking to explore more opportunity's and learn new technologies."
         />
       </Head>
       <Container className="mt-9">
