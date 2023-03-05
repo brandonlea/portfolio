@@ -6,10 +6,16 @@ import { SimpleLayout } from '../components/SimpleLayout'
 
 const projects = [
   {
+    name: 'Plugin Configuration',
+    description:
+        'All plugin configurations.',
+    link: { href: 'https://github.com/brandonlea/PluginConfigurations', label: 'github.com' },
+  },
+  {
     name: 'Force-field',
     description:
       'Force-field plugin to push mobs away in all directions.',
-    link: { href: '#', label: 'github.com' },
+    link: { href: 'https://github.com/brandonlea/Forcefield', label: 'github.com' },
   },
   {
     name: 'Ultra Core',
