@@ -6,34 +6,21 @@ import { SimpleLayout } from '../components/SimpleLayout'
 
 const projects = [
   {
-    name: 'Plugin Configuration',
-    description:
-        'All plugin configurations.',
-    link: { href: 'https://github.com/brandonlea/PluginConfigurations', label: 'github.com' },
-  },
-  {
-    name: 'Force-field',
-    description:
-      'Force-field plugin to push mobs away in all directions.',
-    link: { href: 'https://github.com/brandonlea/Forcefield', label: 'github.com' },
-  },
-  {
-    name: 'Ultra Core',
-    description:
-      'A Custom Spigot API Ive been working on to make it easier for people.',
-    link: { href: 'https://github.com/brandonlea/UltraCore', label: 'github.com' },
-  },
-  {
-    name: 'Ultra Hub',
-    description:
-      'A all in one Hub plugin for Minecraft.',
-    link: { href: 'https://github.com/brandonlea/UltraHub', label: 'github.com' },
+    name: 'Social link profile',
+    description: 'Provides infomation about the person',
+    link: {
+      href: 'https://github.com/brandonlea/social-link.github.io',
+      label: 'github.com',
+    },
   },
   {
     name: 'Tweet Email Application',
     description:
       'Tracks the email status from when you have sent it, this was made for a technical interview.',
-    link: { href: 'https://github.com/brandonlea/TweetEmailApplication', label: 'github.com' },
+    link: {
+      href: 'https://github.com/brandonlea/TweetEmailApplication',
+      label: 'github.com',
+    },
   },
 ]
 

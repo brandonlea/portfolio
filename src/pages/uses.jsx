@@ -41,25 +41,19 @@ export default function Uses() {
       >
         <div className="space-y-20">
           <ToolsSection title="Workstation">
-            <Tool title="Custom Built Desktop PC">
-              CPU: Ryzen 7 2700x
-              GPU: RTX 3060
-              Ram: 32GB DDR4
-              Storage: 1TB M.2, 3x 500GB SSD
-            </Tool>
-            <Tool title="BenQ 29 Inch monitor">
-              I have 2x monitors so I can work quicker and more efficient.
+            <Tool title="Acer Nitro 5 Laptop">
+              CPU: 11th Gen Intel(R) Core(TM) i7-11800H Ram: 16GB DDR 4 GPU: RTX
+              3060
             </Tool>
           </ToolsSection>
           <ToolsSection title="Development tools">
-            <Tool title="Webstorm">
-              I love using Webstorm when I am doing front end website development like HTML, CSS, JS.
+            <Tool title="Visual Studio Code">
+              I love using Visual Studio Code when I am doing front end website
+              development like HTML, CSS, JS.
             </Tool>
             <Tool title="PHPStorm">
-              I love using PHPStorm when I'm working with PHP projects like Laravel or core PHP it makes it so much easier and efficient.
-            </Tool>
-            <Tool title="IntelliJ">
-              Great software when working with Java it's the ultimate IDE all in one.
+              I love using PHPStorm when I'm working with PHP projects like
+              Laravel or core PHP it makes it so much easier and efficient.
             </Tool>
           </ToolsSection>
         </div>

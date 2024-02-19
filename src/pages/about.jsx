@@ -4,10 +4,7 @@ import Link from 'next/link'
 import clsx from 'clsx'
 
 import { Container } from '../components/Container'
-import {
-  GitHubIcon,
-  LinkedInIcon,
-} from '../components/SocialIcons'
+import { GitHubIcon, LinkedInIcon } from '../components/SocialIcons'
 import portraitImage from '../images/avatar.jpg'
 
 function SocialLink({ className, href, children, icon: Icon }) {
@@ -59,29 +56,44 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I'm Brandon-Lea Price. I live in the United Kingdom, where I develop the future.
+              I am Brandon-Lea Price
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                I started learning development when I was 12 years old, I started learning Python as I wanted to create something with a Raspberry PI which my teach gave me.
+                I started learning development when I was 12 years old, I
+                started learning Python as I wanted to create something with a
+                Raspberry PI which my teach gave me.
               </p>
               <p>
-                I've always wanted to make a difference in the world by creating new things that would help people and make things easier for people.
+                I've always wanted to make a difference in the world by creating
+                new things that would help people and make things easier for
+                people.
               </p>
               <p>
-                While technology is expanding there's always a need to find new ways how we think and how we develop.
+                While technology is expanding there's always a need to find new
+                ways how we think and how we develop.
               </p>
               <p>
-                I love going out for walks to clear my mind and I like going to the cinema to watch films and exploring new things, I also love traveling different countries.
+                I love going out for walks to clear my mind and I like going to
+                the cinema to watch films and exploring new things, I also love
+                traveling different countries.
               </p>
             </div>
           </div>
           <div className="lg:pl-20">
             <ul role="list">
-              <SocialLink href="https://github.com/brandonlea" icon={GitHubIcon} className="mt-4">
+              <SocialLink
+                href="https://github.com/brandonlea"
+                icon={GitHubIcon}
+                className="mt-4"
+              >
                 Follow on GitHub
               </SocialLink>
-              <SocialLink href="https://www.linkedin.com/in/brandon-lea-price-249129172/" icon={LinkedInIcon} className="mt-4">
+              <SocialLink
+                href="https://www.linkedin.com/in/brandon-lea-price-249129172/"
+                icon={LinkedInIcon}
+                className="mt-4"
+              >
                 Follow on LinkedIn
               </SocialLink>
               <SocialLink

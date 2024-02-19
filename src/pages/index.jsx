@@ -6,13 +6,11 @@ import clsx from 'clsx'
 import { Button } from '../components/Button'
 import { Card } from '../components/Card'
 import { Container } from '../components/Container'
-import {
-  GitHubIcon,
-  LinkedInIcon,
-} from '../components/SocialIcons'
+import { GitHubIcon, LinkedInIcon } from '../components/SocialIcons'
 import { formatDate } from '../lib/formatDate'
 import { generateRssFeed } from '../lib/generateRssFeed'
 import { getAllArticles } from '../lib/getAllArticles'
+import Skill from '../components/skill'
 
 function MailIcon(props) {
   return (
@@ -90,7 +88,7 @@ function Article({ article }) {
 
 function SocialLink({ icon: Icon, ...props }) {
   return (
-    <Link className="group -m-1 p-1" {...props}>
+    <Link target="_blank" className="group -m-1 p-1" {...props}>
       <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
     </Link>
   )
@@ -102,7 +100,7 @@ function Resume() {
       company: 'Scolmore International',
       title: 'Full Stack Website Developer',
       start: '2021',
-      end: '2021'
+      end: '2021',
     },
   ]
 
@@ -143,22 +141,25 @@ function Resume() {
           </li>
         ))}
       </ol>
-      <Button href="#" variant="secondary" className="group mt-6 w-full">
-        Download CV
-        <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
-      </Button>
     </div>
   )
 }
 
-
 export default function Home({ articles }) {
+  const skills = [
+    'HTML5',
+    'CSS3',
+    'JavaScript',
+    'PHP',
+    'Laravel',
+    'React',
+    'Tailwindcss',
+  ]
+
   return (
     <>
       <Head>
-        <title>
-          Brandon-Lea Price - Software Developer
-        </title>
+        <title>Brandon-Lea Price - Software Developer</title>
         <meta
           name="description"
           content="I'm Brandon-Lea, a software developer based in United Kingdom. I'm looking to explore more opportunity's and learn new technologies."
@@ -170,7 +171,9 @@ export default function Home({ articles }) {
             Software Developer
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I'm Brandon-Lea, a software developer based in United Kingdom. I'm looking to explore more opportunity's and learn new technologies.
+            I am Brandon-Lea Price, a software developer based in United
+            Kingdom. I'm looking to explore more opportunity's and learn new
+            technologies.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
@@ -195,6 +198,15 @@ export default function Home({ articles }) {
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             <Resume />
+          </div>
+        </div>
+
+        <div className="pt-16 text-black dark:text-white">
+          <h1 className="text-center text-3xl font-bold">Skills</h1>
+          <div className="grid grid-cols-7 space-x-4 pt-6 text-center text-white">
+            {skills.map((item) => (
+              <Skill key="" name={item} />
+            ))}
           </div>
         </div>
       </Container>
