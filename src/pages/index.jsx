@@ -7,7 +7,7 @@ import { GitHubIcon, LinkedInIcon } from '../components/SocialIcons'
 import { formatDate } from '../lib/formatDate'
 import { generateRssFeed } from '../lib/generateRssFeed'
 import { getAllArticles } from '../lib/getAllArticles'
-import Skill from '../components/skill'
+import Skill from '../components/Skill'
 
 function BriefcaseIcon(props) {
   return (
